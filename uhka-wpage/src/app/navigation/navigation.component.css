@@ -1,0 +1,12 @@
+.logo{
+    width: 49px;
+}
+
+.item-name {
+    font-family: "Roboto", Geneva, "Lucida Console", sans-serif;
+    color: #b7b7b7;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
