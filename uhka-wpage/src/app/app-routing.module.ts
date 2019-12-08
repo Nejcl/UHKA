@@ -6,8 +6,8 @@ import { KontaktComponent} from './kontakt/kontakt.component';
 import { CenikComponent } from './cenik/cenik.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: 'domov', pathMatch: 'full'},
+  { path: 'domov', component: HomeComponent },
   { path: 'vrste-ciscenja', component: VrsteCiscenjaComponent },
   { path: 'cenik', component: CenikComponent },
   { path: 'kontakt', component: KontaktComponent },

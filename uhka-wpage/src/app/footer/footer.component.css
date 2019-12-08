@@ -1,0 +1,10 @@
+.icon::before {
+    margin-right: 5px;
+  }
+
+  .icon {
+    position: relative;
+    /* Adjust these values accordingly */
+    top: 7px;
+    margin-right: 5px;
+  }

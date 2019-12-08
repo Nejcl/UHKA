@@ -1,54 +1,27 @@
+<!-- Default form contact -->
+<form class=" border border-light p-5" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
 
-<section class="container">
-        <section id="page-zones__main" class="bk-zone column " data-uniqueid="cuTru3PjH593kgY" data-parentuniqueid="">            
-<div id="page-zones__main-widgets__5c23a36b1976b" data-name="contactform" class="widget widget--zone-widget js-widget" data-uniqueid="8bmTDq82vTt0mSb" data-parentuniqueid="cuTru3PjH593kgY">
+                <h2>Kontaktirajte nas</h2>
+                <br>
+              
+                <!-- Name -->
+                <input type="text" formControlName="contactFormName" id="defaultContactFormName" mdbInput
+                  class="form-control mb-4" placeholder="Ime in priimek">
+              
+                <!-- Email -->
+                <input type="email" formControlName="contactFormEmail" id="defaultContactFormEmail" mdbInput
+                  class="form-control mb-4" placeholder="E-mail">
+              
+                <!-- Subject -->
+              
+                <!-- Message -->
+                <div class="form-group">
+                  <textarea formControlName="contactFormMessage" class="form-control rounded-0" mdbInput id="exampleFormControlTextarea2"
+                    rows="3" placeholder="Sporočilo"></textarea>
+                </div>
 
-
-
-
-<div class="bk-contactform  contactform  widget__contactform">
-
-    <form class="form  contactform__form js-form">
-
-            <fieldset class="fieldset  contactform__fieldset">
-
-                    <legend class="legend  contactform__legend">Kontaktirajte nas</legend>
-
-                    <div class="form-body  contactform__form-body">
-
-                            <div class="form-group  contactform__form-group">
-
-                                    <label class="label  label--email  contactform__label" for="page-zones__main-widgets__5c23a36b1976b__input--email">Vaš e-mail</label>
-
-                                    <input class="input  input--email  input--single-line  contactform__input js-email-input" id="page-zones__main-widgets__5c23a36b1976b__input--email" name="page-zones__main-widgets__5c23a36b1976b__input--email" placeholder="ime@vasa-domena.si" type="email">
-
-            </div>
-
-                            <div class="form-group  contactform__form-group">
-
-                                    <label class="label  label--message  contactform__label" for="page-zones__main-widgets__5c23a36b1976b__textarea--message">Sporočilo</label>
-
-                                    <textarea class="textarea  textarea--message  contactform__textarea js-message-input" id="page-zones__main-widgets__5c23a36b1976b__textarea--message" name="page-zones__main-widgets__5c23a36b1976b__textarea--message"></textarea>
-
-            </div>
-            
-            <div class="form-group  contactform__form-group js-recaptcha"></div>
-
-                            <div class="form-group  contactform__form-group">
-
-                                    <button class="button  button--submit  contactform__button js-button" type="submit">Pošlji</button>
-            </div>
-
-
-        </div>
-
-    </fieldset>
-
-</form>
-
-</div>
-
-</div>
-</section>
-
-    </section>
+              
+                <!-- Send button -->
+                <button  type="submit" [disabled]="">Pošlji</button>
+              </form>
+              <!-- Default form contact -->

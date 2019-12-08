@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule, ReactiveFormsModule }         from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,7 +13,8 @@ import { CenikComponent } from './cenik/cenik.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { CurouselComponent } from './curousel/curousel.component';
-
+import { FooterComponent } from './footer/footer.component';
+import { ConnectionService } from './connection.service'
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,9 @@ import { CurouselComponent } from './curousel/curousel.component';
     CenikComponent,
     KontaktComponent,
     NavigationComponent,
-    CurouselComponent
+    CurouselComponent,
+    FooterComponent,
+    
   ],
   imports: [
     OwlModule,
@@ -36,10 +39,11 @@ import { CurouselComponent } from './curousel/curousel.component';
     MatProgressSpinnerModule,
     MatListModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    ReactiveFormsModule
   ],
-  exports:[OwlModule, CurouselComponent],
-  providers: [],
+  exports:[OwlModule, CurouselComponent,FormsModule, ReactiveFormsModule],
+  providers: [ConnectionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
