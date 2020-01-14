@@ -24,19 +24,16 @@ export class KontaktComponent implements OnInit {
     this.contactForm = fb.group({
       'contactFormName': ['', Validators.required],
       'contactFormEmail': ['', Validators.compose([Validators.required, Validators.email])],
-      'contactFormSubjects': ['', Validators.required],
       'contactFormMessage': ['', Validators.required],
-      'contactFormCopy': [''],
       });
     }
-
 
   ngOnInit() {
   }
 
   onSubmit() {
     this.connectionService.sendMessage(this.contactForm.value).subscribe(() => {
-      alert('Your message has been sent.');
+      alert('Vaše sporočilo je bilo poslano.');
       this.contactForm.reset();
       this.disabledSubmitButton = true;
     }, error => {
