@@ -14,7 +14,9 @@ import { KontaktComponent } from './kontakt/kontakt.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { CurouselComponent } from './curousel/curousel.component';
 import { FooterComponent } from './footer/footer.component';
-import { ConnectionService } from './connection.service'
+import { ConnectionService } from './connection.service';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +31,7 @@ import { ConnectionService } from './connection.service'
   ],
   imports: [
     OwlModule,
+    CarouselModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
